@@ -1,5 +1,5 @@
-#### *what is arp?* 
-arp = address resolution protocol
+#### *arp* 
+address resolution protocol
 - used to find device's mac address when you already know it's ip address
 - allows devices to identify and communicate with each other on a local network
 	- only works on lan
