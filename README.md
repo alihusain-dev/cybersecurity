@@ -1,5 +1,5 @@
 # cybersecurity-notes
-cybersecurity student
+Cybersecurity student
 
 Documenting my journey as an incoming cybersecurity student
 
