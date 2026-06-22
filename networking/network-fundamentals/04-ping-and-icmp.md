@@ -1,5 +1,5 @@
 
-#### what is ping
+#### *what is ping*
 * ping is a network tool used to test communication between devices
 * checks whether another device can be reached
 * measures how long it takes for data to travel there and back
