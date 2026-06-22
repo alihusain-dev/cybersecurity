@@ -3,7 +3,7 @@ Cybersecurity student
 
 Documenting my journey as an incoming cybersecurity student
 
-Currently studying:
+Content Includes:
 - Networking
 - Linux
 - Python
