@@ -1,4 +1,4 @@
-# osi model
+# osi model overview
 
 ## what is the osi model?
 
@@ -36,7 +36,6 @@ imagine you want to mail a package to a friend.
 ### layer 7 - application
 
 - decide what message to send
-- write the letter
 
 ### layer 6 - presentation
 
@@ -49,53 +48,47 @@ imagine you want to mail a package to a friend.
 ### layer 4 - transport
 
 - ensure the package arrives correctly
-- tracking number and delivery confirmation
 
 ### layer 3 - network
 
 - determine the route to the destination
-- choose which roads and cities to travel through
 
 ### layer 2 - data link
 
 - move the package between nearby locations
-- local post office to local post office
 
 ### layer 1 - physical
 
 - physically transport the package
-- trucks, roads, airplanes, and mail carriers
 
-## relating the osi model to networking concepts
+## memory trick
 
-### layer 3 - network
+7. application
+6. presentation
+5. session
+4. transport
+3. network
+2. data link
+1. physical
 
-- ip addresses
-- routers
-
-### layer 2 - data link
-
-- mac addresses
-- switches
-- arp
-
-### layer 1 - physical
-
-- ethernet cables
-- wifi signals
+all
+people
+seem
+to
+need
+data
+processing
 
 ## important notes
 
-- layer 7 is the highest layer (closest to the user)
-- layer 1 is the lowest layer (physical cables and signals)
-- each layer has its own responsibilities
-- data travels through multiple layers before reaching its destination
+- layer 7 is closest to the user
+- layer 1 is closest to the hardware
+- data moves through multiple layers before reaching its destination
+- each layer has a specific responsibility
 
 ## key takeaway
 
 - the osi model divides networking into 7 layers
 - each layer performs a specific job
 - encapsulation adds information as data moves through the layers
-- layer 3 deals with ip addresses and routing
-- layer 2 deals with mac addresses and local delivery
-- layer 1 deals with physical transmission of data
+- understanding the osi model helps explain how network communication works****
