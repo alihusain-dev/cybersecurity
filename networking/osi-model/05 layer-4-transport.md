@@ -70,7 +70,10 @@
 
 ## analogy
 
-sending a package:
+delivery truck:
+- ensures all packages arrive in the right order
+- reassembles them correctly
+- if any piece is missing it sends it again
 
 ### tcp
 
