@@ -2,16 +2,10 @@
 
 ## what is the presentation layer?
 
-- responsible for translating and formatting data
+- responsible for translating data in a format both devices understand
 - ensures different devices and applications can understand the data
 - acts as a translator between applications
-
-## examples
-
-- data formatting
-- data translation
-- encryption
-- https
+- also encrypts data for security (converting and locking message before sent)
 
 ## analogy
 
