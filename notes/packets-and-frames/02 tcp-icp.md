@@ -5,20 +5,14 @@
 - transmission control protocol
 - connection-based protocol
 - establishes a connection before sending data
-- guarantees data is received correctly and in order
+- guarantees data is delivered correctly and in order
 
-## advantages
+## key features
 
 - reliable
-- checks for errors
-- data arrives in the correct order
+- error checking
 - retransmits lost data
-
-## disadvantages
-
 - slower than udp
-- requires more processing
-- connection must be maintained
 
 ## key terms
 
@@ -30,83 +24,47 @@
 
 - port receiving the data
 
-### source ip
-
-- ip address of the sender
-
-### destination ip
-
-- ip address of the receiver
-
 ### checksum
 
 - verifies data integrity
-- helps detect corruption
 
 ### sequence number
 
-- tracks the order of packets
+- keeps packets in the correct order
 
-### acknowledgement number
+### acknowledgement (ack)
 
 - confirms data was received
 
 ## three-way handshake
 
-tcp establishes a connection using:
+1. **syn**
+   - client requests a connection
 
-### 1. syn
+2. **syn/ack**
+   - server accepts the request
 
-client says:
-- "can we connect?"
+3. **ack**
+   - client confirms the connection
 
-### 2. syn/ack
+connection is now established.
 
-server says:
-- "yes, i received your request"
+## ending a connection
 
-### 3. ack
-
-client says:
-- "great, connection established"
-
-connection is now ready to send data.
-
-## closing a connection
-
-### fin
-
-- requests a graceful connection close
-
-### ack
-
-- confirms the request
-
-### rst
-
-- immediately terminates the connection
+- **fin** = closes the connection normally
+- **rst** = immediately ends the connection
 
 ## analogy
 
-like making a phone call
+like making a phone call.
 
-### syn
-
-"hello?"
-
-### syn/ack
-
-"yes, i can hear you"
-
-### ack
-
-"great, let's talk"
-
-data can now be exchanged.
+- syn = "hello?"
+- syn/ack = "i can hear you."
+- ack = "great, let's talk."
 
 ## key takeaway
 
-- tcp = reliable communication
+- tcp is reliable and connection-based
 - uses the three-way handshake
-- guarantees delivery and order
-- slower than udp because of extra reliability
+- guarantees delivery and packet order
+- slower than udp because it verifies data
