@@ -1,182 +1,125 @@
 # subnetting
 
-## subnetting
+## what is subnetting?
 
-splitting one large network into smaller networks (subnets).
+- splitting one large network into smaller networks (subnets)
+- improves organization, efficiency, and security
 
-- helps organize devices
-- helps manage traffic
-- improves efficiency and security
-
-### analogy
+## analogy
 
 - one cake = one large network
-- slices of cake = subnets
+- cake slices = subnets
 - subnetting decides who gets which slice
 
 ## why use subnetting?
 
-- improve organization
-- improve efficiency
+- organize devices into groups
+- reduce unnecessary traffic
 - improve security
-- give administrators more control
+- make networks easier to manage
 
-### example
-
-instead of placing every device on one giant network:
-
-- accounting subnet
-- finance subnet
-- human resources subnet
+**example:**
+- accounting
+- finance
+- human resources
 
 ## subnet masks
 
-a subnet mask tells us:
+a subnet mask determines:
 
 - which part of an ip address is the network
-- which part is the host/device
+- which part is the host (device)
 
-### example
+**example:**
 
-**ip address:**
-
+ip address:
 - 192.168.1.100
 
-**subnet mask:**
-
+subnet mask:
 - 255.255.255.0
 
-**result:**
+result:
+- network = 192.168.1
+- host = 100
 
-- 192.168.1 = network
-- 100 = host
+## binary
 
-### why does 255 mean "network"?
+- 255 = network bits (11111111)
+- 0 = host bits (00000000)
 
-subnet masks work in binary.
+example:
 
-**examples:**
+255.255.255.0
 
-- 255 = 11111111
-  - all 1s = network bits
+↓
 
-- 0 = 00000000
-  - all 0s = host bits
+11111111.11111111.11111111.00000000
 
-## binary subnet mask example
+↓
 
-**subnet mask:**
+network.network.network.host
 
-- 255.255.255.0
+## host addresses
 
-**binary:**
+formula:
 
-- 11111111.11111111.11111111.00000000
+- 2^(host bits)
 
-**meaning:**
+example:
 
-- network.network.network.host
-
-## counting hosts
-
-to determine how many addresses a subnet can contain:
-
-### formula
-
-- 2^(number of host bits)
-
-### example
-
-**subnet mask:**
-
-- 255.255.255.0
-
-**binary:**
-
-- 11111111.11111111.11111111.00000000
-
-**host bits:**
-
-- 00000000
-
-calculation:
-
-- 2^8 = 256 total addresses
-- 256 - 2 = 254 usable addresses
-
-### reserved addresses
+- /24 (255.255.255.0)
+- 8 host bits
+- 2⁸ = 256 total addresses
+- 254 usable addresses
 
 two addresses are reserved:
 
-#### network address
-
-- identifies the network itself
-
-#### broadcast address
-
-- used to send a message to every device on the network
+- network address
+- broadcast address
 
 ## addresses in a subnet
 
 ### network address
 
-- identifies the network itself
-- represents the start of the network
-- tells devices which network they belong to
+- identifies the network
 
-**example:**
-
+example:
 - 192.168.1.0
 
-**analogy:**
-
-- the name of the neighborhood
-- "oak street neighborhood"
+analogy:
+- neighborhood name
 
 ### host address
 
-- identifies a specific device on the network
+- identifies a specific device
 
-**example:**
-
+example:
 - 192.168.1.100
 
-**analogy:**
-
-- a specific house in the neighborhood
-- "123 oak street"
+analogy:
+- house address
 
 ### default gateway
 
-- device that sends traffic to other networks
+- sends traffic to other networks
 - usually the router
-- used whenever data needs to leave the local network
 
-**example:**
-
+example:
 - 192.168.1.254
 
-**analogy:**
+analogy:
+- neighborhood exit/highway
 
-- the neighborhood exit/highway entrance
+rule:
 
-if you're visiting another neighborhood or city, you leave through the highway entrance first.
-
-### rule
-
-**same network:**
-
-- communicate directly
-
-**different network or internet:**
-
-- send traffic to the default gateway
+- same network → communicate directly
+- different network → use the default gateway
 
 ## key takeaway
 
-- subnetting divides large networks into smaller networks
-- subnet masks determine the network and host portions of an ip address
-- network address = identifies the network
-- host address = identifies a device
-- default gateway = sends traffic to other networks
-- broadcast address = sends traffic to every device on the subnet
+- subnetting divides a network into smaller networks
+- subnet masks separate the network and host portions of an ip address
+- network address = network
+- host address = device
+- default gateway = other networks
+- broadcast address = every device on the subnet
