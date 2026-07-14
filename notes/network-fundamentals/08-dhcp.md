@@ -1,114 +1,59 @@
 # dhcp (dynamic host configuration protocol)
 
-## dhcp
-
-dynamic host configuration protocol.
+## what is dhcp?
 
 - automatically assigns ip addresses to devices
-- prevents you from having to manually configure devices
+- prevents manual ip configuration
 - usually runs on your home router
 
-## why do we need dhcp?
+## why is dhcp important?
 
-### without dhcp
+without dhcp:
 
-- every device would need a manually assigned ip address
-- easy to make mistakes
-- could accidentally assign the same ip address twice
-- more time-consuming to manage
+- every device needs a manual ip address
+- easy to assign duplicate ip addresses
+- slower to manage
 
-### with dhcp
+with dhcp:
 
-- devices automatically receive available ip addresses
-- reduces configuration errors
+- devices receive an available ip address automatically
+- reduces errors
 - simplifies network management
 
-## dhcp process (dora)
+## dora process
 
-remember:
+### discover
 
-- discover
-- offer
-- request
-- acknowledge
+- device asks for an ip address
 
-### 1. dhcp discover
+### offer
 
-a new device joins the network and asks:
+- dhcp server offers an available ip address
 
-> "is there a dhcp server out there that can give me an ip address?"
+### request
 
-### 2. dhcp offer
+- device accepts the offered ip address
 
-the dhcp server responds:
+### acknowledge (ack)
 
-> "yes, you can use 192.168.1.10"
-
-### 3. dhcp request
-
-the device responds:
-
-> "sounds good, i'd like to use 192.168.1.10"
-
-### 4. dhcp acknowledge (ack)
-
-the dhcp server confirms:
-
-> "approved. you may use 192.168.1.10"
-
-the device can now communicate on the network.
+- dhcp server confirms the assignment
 
 ## dhcp lease
 
 - temporary permission to use an ip address
-- after a period of time, the device renews the lease
-- prevents ip addresses from being permanently assigned to inactive devices
-
-### example
-
-> "you may use 192.168.1.10 for the next 24 hours"
-
-after the lease expires, the device asks to renew it.
+- device renews the lease before it expires
 
 ## analogy
 
-imagine checking into a hotel.
+checking into a hotel:
 
-### discover
-
-you ask:
-
-> "do you have any rooms available?"
-
-### offer
-
-the front desk replies:
-
-> "yes, room 210 is available."
-
-### request
-
-you respond:
-
-> "great, i'd like room 210."
-
-### acknowledge
-
-the front desk confirms:
-
-> "perfect. room 210 is yours."
-
-### analogy mapping
-
-- hotel room = ip address
-- front desk = dhcp server
-- guest = device
-- hotel stay = dhcp lease
+- discover = "do you have any rooms?"
+- offer = "room 210 is available."
+- request = "i'll take room 210."
+- acknowledge = "it's yours."
 
 ## key takeaway
 
 - dhcp automatically assigns ip addresses
-- most home routers act as dhcp servers
 - dora = discover → offer → request → acknowledge
-- devices receive temporary ip leases
-- dhcp prevents ip conflicts and simplifies network management
+- ip addresses are leased, not permanently assigned
