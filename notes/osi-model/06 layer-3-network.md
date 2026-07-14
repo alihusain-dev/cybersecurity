@@ -2,67 +2,36 @@
 
 ## what is the network layer?
 
-- responsible for sending data between different networks
-- determines the best path for data to travel
+- sends data between different networks
+- determines the best path for data
 - handles routing
-
-## how it works
-
-- receives data from other layers
-- breaks data into packets
-- decides the route packets should take
-- sends packets toward their destination using ip addresses
 
 ## key terms
 
-### packets
+### packet
 
-- small pieces of data sent across a network
-- routed individually to reach the destination
+- small piece of data sent across a network
+- uses ip addresses
 
 ### routing
 
-- process of finding the best path for packets to travel
-- performed by routers
+- process of finding the best path for packets
 
 ### ip address
 
-- used to identify devices on a network
-- tells routers where packets need to go
+- identifies where a device is on a network
 
 ### router
 
 - layer 3 device
-- connects different networks together
+- connects different networks
 - forwards packets using ip addresses
 
 ### routing protocols
 
-rules routers use to decide the best path.
+- rules routers use to find the best path
 
 examples:
-
-**ospf (open shortest path first)**
-
-- finds efficient routes between networks
-
-**rip (routing information protocol)**
-
-- routing protocol that helps routers share route information
-
-## choosing the best route
-
-routers consider:
-
-- shortest path
-- most reliable path
-- fastest connection
-
-## examples
-
-- ip addresses
-- routers
-- packets
 - ospf
 - rip
 
@@ -70,19 +39,13 @@ routers consider:
 
 like using gps.
 
-gps chooses the best route based on:
-
-- distance
-- traffic
-- speed
-
-routers do the same thing, but with network paths.
+- destination = ip address
+- gps = router
+- route = path the packet takes
 
 ## key takeaway
 
-- network layer = routing between networks
+- layer 3 = network layer
 - uses ip addresses
-- routers operate at layer 3
-- data is sent in packets
-- routing protocols help decide the best path
-```
+- routers move packets between networks
+- routing finds the best path
