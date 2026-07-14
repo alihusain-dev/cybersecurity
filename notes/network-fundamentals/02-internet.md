@@ -1,69 +1,57 @@
 # internet
 
-## definition
+## what is the internet?
 
-the internet is a giant network made up of many smaller networks.
-
-- it connects networks all around the world
-- devices communicate by passing data between these networks
+- a giant network made up of many smaller networks
+- connects networks around the world
+- allows devices on different networks to communicate
 
 ## analogy
 
-- alice speaks two languages
-- bob and jim speak one language
-- zayn and toby speak another language
+friend groups:
 
-bob and jim cannot directly communicate with zayn and toby.
+- bob and jim
+- zayn and toby
 
-instead:
+alice can communicate with both groups, so she acts as the messenger.
 
-- bob → alice → zayn
-- jim → alice → toby
+### networking analogy
 
-alice acts as the messenger between groups.
+- friend groups = separate networks
+- alice = router
+- communication between all groups = internet
 
-## networking analogy
-
-- separate networks = different friend groups
-- internet = the messenger connecting those groups
-- routers = the messengers that move information between networks
-
-## how the internet works
+## how it works
 
 - many small networks connect together
-- routers connect these networks
+- routers move data between networks
 - data travels through multiple networks until it reaches its destination
 
 ### examples
 
-- home network → internet → youtube network
-- home network → internet → google network
+- home network → internet → youtube
+- home network → internet → google
 
-## private network
+## private vs public networks
 
-a network used internally.
+### private network
 
-- usually belongs to a home, school, or business
+- used internally
+- examples:
+  - home wifi
+  - school network
+  - office network
 
-### examples
+### public network
 
-- home wifi
-- school network
-- office network
+- accessible by many people
 
-## public network
-
-a network that is accessible by many people.
-
-- used to connect networks together
-
-### examples
+example:
 
 - the internet
 
 ## key takeaway
 
 - the internet is a network of networks
-- small private networks connect to the internet
-- routers move data between networks
-- the internet allows devices on different networks to communicate with each other
+- routers connect networks together
+- private networks connect to the public internet
