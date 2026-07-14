@@ -3,23 +3,17 @@
 ## what is the physical layer?
 
 - the lowest layer of the osi model
-- responsible for the physical components used in networking
-- transfers data between devices using signals
-
-## how it works
-
-- devices send data using electrical signals
-- data is represented in binary:
-  - 1s
-  - 0s
+- responsible for the physical hardware that transfers data
+- sends data as electrical or wireless signals
 
 ## examples
 
 - ethernet cables
-- network cables
-- physical hardware
+- fiber optic cables
+- wifi signals
+- network interface cards (nics)
 
 ## key takeaway
 
-- physical layer = hardware and signals
-- moves raw data between devices
+- layer 1 = physical hardware
+- transfers raw bits (1s and 0s)
