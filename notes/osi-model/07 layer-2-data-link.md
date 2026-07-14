@@ -2,31 +2,27 @@
 
 ## what is the data link layer?
 
-- responsible for transferring data between devices on the same network
-- focuses on physical addressing using mac addresses
-- prepares data into a format that can be sent across the network
+- transfers data between devices on the same local network
+- uses mac addresses for local delivery
 
 ## how it works
 
 - receives data from the network layer
-- adds the destination mac address
-- uses mac addresses to identify where data should go
-
-## mac addresses
-
-- unique identifier assigned to a network interface card (nic)
-- usually assigned by the manufacturer
-- used to identify devices on a local network
+- adds source and destination mac addresses
+- sends the data to the correct device on the local network
 
 ## examples
 
-- mac addresses
 - switches
 - network interface cards (nic)
-- "making sure data is packaged properly and gets to the next stop without errors"
+- mac addresses
+
+## analogy
+
+like putting a person's name on a package before delivering it around the neighborhood.
 
 ## key takeaway
 
-- data link layer = local delivery
+- layer 2 = local communication
 - uses mac addresses
-- helps devices on the same network communicate
+- switches operate at this layer
