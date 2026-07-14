@@ -1,10 +1,12 @@
 # network basics
 
-## network
+## what is a network?
 
-a group of devices that can communicate with each other.
+- a group of connected devices that can communicate with each other
+- networks allow devices to share information and resources
 
-examples:
+## examples
+
 - phones
 - laptops
 - printers
@@ -13,14 +15,15 @@ examples:
 
 ## analogy
 
-friend group:
+a friend group:
+
 - alice
 - bob
 - jim
 
-all three are connected because they can communicate with each other.
+they form a network because they can all communicate with each other.
 
-## computer network example
+## computer network
 
 - device a
 - device b
@@ -30,6 +33,6 @@ all devices are connected because they can exchange data.
 
 ## key takeaway
 
-- a network is anything that allows connected devices or systems to communicate and share information
-- networks can be extremely small or extremely large
-- cybersecurity focuses heavily on understanding how devices communicate
+- networks can be small or large
+- communication is what makes something a network
+- cybersecurity focuses on how devices communicate
