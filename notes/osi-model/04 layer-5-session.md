@@ -2,9 +2,7 @@
 
 ## what is the session layer?
 
-- creates connections between devices
-- keeps connections active while data is being exchanged
-- closes connections when communication is finished
+- creates, maintains, and closes connections between devices
 
 ## session
 
@@ -13,16 +11,16 @@
 ## checkpoints
 
 - save points during communication
-- if data is lost, communication can continue from the latest checkpoint
+- allow communication to resume if data is lost
 
 ## analogy
 
 like a phone call
 
-- calling someone = creating a session
-- talking = maintaining the session
-- hanging up = ending the session
+- calling = create session
+- talking = maintain session
+- hanging up = close session
 
 ## key takeaway
 
-- session layer = manages connections between devices
+- session layer manages connections between devices
