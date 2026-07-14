@@ -4,92 +4,44 @@
 
 - responsible for transmitting data between devices
 - controls how data is sent and received
-- uses different protocols depending on what is needed
+- determines how reliable communication should be
 
-## how it works
+## tcp (transmission control protocol)
 
-- data is split into smaller pieces called packets
-- packets are sent between devices
-- the transport layer decides how reliable the connection needs to be
+- connection-based
+- reliable
+- checks for errors
+- guarantees data arrives correctly and in order
 
-## key terms
-
-### tcp (transmission control protocol)
-
-- connection-based protocol
-- focuses on reliability and accuracy
-- makes sure all data arrives correctly
-- performs error checking
-
-### how tcp works
-
-- creates a connection between two devices
-- sends packets
-- checks that packets arrive
-- reassembles packets in the correct order
-
-### advantages of tcp
-
-- guarantees accurate data
-- confirms packets were received
-- reliable for important information
-
-### disadvantages of tcp
-
-- slower because it checks everything
-- requires more processing
-
-### examples
-
+**examples:**
 - web browsing
 - file transfers
 - emails
 
 ## udp (user datagram protocol)
 
-- connectionless protocol
-- focuses on speed
-- sends data without confirming it arrived
-
-### advantages of udp
-
+- connectionless
 - faster than tcp
-- less delay
-- good for real-time communication
-
-### disadvantages of udp
-
 - does not guarantee delivery
-- packets can be lost
+- used when speed is more important than reliability
 
-### examples
-
+**examples:**
 - video streaming
 - gaming
 - voice calls
 
 ## analogy
 
-delivery truck:
-- ensures all packages arrive in the right order
-- reassembles them correctly
-- if any piece is missing it sends it again
-
-### tcp
-
+**tcp:**
 - tracked shipping
-- confirms delivery
-- makes sure every package arrives
+- confirms every package arrives
 
-### udp
-
+**udp:**
 - regular mail
-- sends it quickly
-- does not check if every piece arrived
+- sends it quickly without checking delivery
 
 ## key takeaway
 
-- transport layer controls data delivery
+- transport layer controls how data is delivered
 - tcp = reliable but slower
 - udp = faster but less reliable
-- choose tcp or udp depending on the situation
