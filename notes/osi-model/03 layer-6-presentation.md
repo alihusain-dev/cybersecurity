@@ -2,17 +2,15 @@
 
 ## what is the presentation layer?
 
-- responsible for translating data in a format both devices understand
-- ensures different devices and applications can understand the data
-- acts as a translator between applications
-- also encrypts data for security (converting and locking message before sent)
+- translates data into a format both devices understand
+- formats data before it is sent
+- encrypts data for security
 
 ## analogy
 
-like translating a message from one language into another so both people can understand it.
+like translating a message into another language so both people can understand it.
 
 ## key takeaway
 
-- presentation layer = translation and formatting
-- ensures data can be understood by different systems
-- encryption occurs at this layer
+- presentation layer = translation, formatting, and encryption
+- ensures devices can understand each other
