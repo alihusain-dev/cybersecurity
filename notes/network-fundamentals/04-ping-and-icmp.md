@@ -2,148 +2,71 @@
 
 ## ping
 
-- ping is a network tool used to test communication between devices
-- checks whether another device can be reached
-- measures how long it takes for data to travel there and back
+- network tool used to test communication between devices
+- checks if another device can be reached
+- measures the round-trip time for data
 
-### what does ping use?
+## icmp
 
-- ping uses icmp (internet control message protocol)
+ping uses icmp (internet control message protocol).
 
-specifically:
-
-- icmp echo request
-- icmp echo reply
-
-## how ping works
-
-### step 1
-
-your device sends an icmp echo request:
+### echo request
 
 > "are you there?"
 
-### step 2
-
-the target device receives the request
-
-### step 3
-
-the target device sends an icmp echo reply:
+### echo reply
 
 > "yes, i'm here."
 
-### step 4
-
-your device measures how long the round trip took
-
 ## ttl (time to live)
 
-- a counter attached to every packet
+- attached to every packet
 - decreases by 1 each time the packet passes through a router
-- prevents packets from traveling forever due to routing errors or loops
-- when ttl reaches 0, the packet is discarded
+- prevents packets from traveling forever
+- packet is discarded when ttl reaches 0
 
-### example
+**analogy:**
 
-packet starts with:
-
-- ttl = 64
-
-**path:**
-
-- pc → router 1 → router 2 → router 3 → server
-
-**ttl values:**
-
-- 64 → 63 → 62 → 61
-
-### why ttl exists
-
-sometimes routers can accidentally create loops.
-
-**example:**
-
-```text
-router a → router b
-     ↑         ↓
-router d ← router c
-```
-
-### without ttl
-
-- packet could travel forever
-- wastes bandwidth
-- slows down networks
-
-### with ttl
-
-- packet eventually reaches ttl = 0
-- packet is discarded
-- loop stops
-
-### analogy
-
-imagine mailing a package with 64 stamps.
-
-- every post office removes one stamp
+- like mailing a package with a limited number of stamps
+- each router removes one stamp
 - when no stamps remain, the package is thrown away
 
-## different types of pings
+## ping examples
 
-### pinging a local router
+### local network
 
-**example:**
+```bash
+ping 192.168.1.254
+```
 
-- ping 192.168.1.254
+- tests communication with your router
+- confirms your local network is working
 
-usually the default gateway/router.
+### internet
 
-- tests communication inside the local network
-- confirms:
-  - device is connected to the network
-  - router is reachable
-
-**analogy:**
-
-- knocking on your front door to make sure your house is there
-
-### pinging a public server
-
-**example:**
-
-- ping 8.8.8.8
-
-google's public dns server.
+```bash
+ping 8.8.8.8
+```
 
 - tests communication with the internet
-- confirms:
-  - router is working
-  - isp is working
-  - internet connection is working
-
-**analogy:**
-
-- mailing a letter across the country to make sure you can reach the outside world
+- confirms your router and internet connection are working
 
 ## troubleshooting
 
-### if
+if:
 
 - ping 192.168.1.254 works
 - ping 8.8.8.8 fails
 
-### then
+then:
 
 - local network is working
-- problem is somewhere between your router and the internet
+- the problem is between your router and the internet
 
 ## key takeaway
 
-- ping tests connectivity between devices
+- ping tests connectivity
 - ping uses icmp
-- icmp echo request = "are you there?"
-- icmp echo reply = "yes, i'm here"
 - ttl prevents packets from looping forever
-- local pings test your network
-- public pings test your internet connection
+- local ping = test your network
+- public ping = test your internet connection
