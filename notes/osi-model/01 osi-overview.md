@@ -3,54 +3,48 @@
 ## what is the osi model?
 
 - osi = open systems interconnection
-- framework used to explain how devices communicate over a network
-- provides a standard that allows different devices and technologies to communicate with each other
-- helps organize networking into layers with specific responsibilities
+- framework that explains how devices communicate over a network
+- organizes networking into 7 layers, each with a specific job
 
-## purpose of the osi model
+## why is it important?
 
 - standardizes network communication
-- allows different devices to understand data sent across a network
-- breaks networking into smaller, easier-to-understand parts
-- useful for troubleshooting (can check each layer to find issue)
-  - wifi not working (physical)
-  - phone connected to network (data link)
-  - is ip address correct (network)
-## 7 layers of the osi model
+- makes networking easier to understand
+- helps troubleshoot network problems one layer at a time
 
-- application 
-- presentation 
-- session 
-- transport
-- network
-- data link
-- physical
+**examples:**
+
+- no wifi → check the physical layer
+- can't communicate on the local network → check the data link layer
+- wrong ip address → check the network layer
+
+## 7 layers
+
+1. application
+2. presentation
+3. session
+4. transport
+5. network
+6. data link
+7. physical
 
 ## encapsulation
 
-- as data moves through the osi layers, information is added to it
+- as data moves through the layers, each layer adds its own information
 - this process is called encapsulation
-- each layer adds information needed for communication
 
 ## memory trick
 
-all
-people
-seem
-to
-need
-data
+all  
+people  
+seem  
+to  
+need  
+data  
 processing
-
-## important notes
-
-- layer 7 is closest to the user
-- layer 1 is closest to the hardware
-- data moves through multiple layers before reaching its destination
-- each layer has a specific responsibility
 
 ## key takeaway
 
 - the osi model divides networking into 7 layers
-- each layer has a specific responsibility
-- data moves through multiple layers before reaching its destination
+- each layer has a different responsibility
+- data moves through every layer during communication
